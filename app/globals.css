@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-manrope: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html, body {
+  background-color: #F7F5EF;
+  color: #22281F;
+}
+
+body {
+  font-family: var(--font-manrope);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-green px-6 py-3 font-medium text-white transition hover:bg-green-dark focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-green/30 bg-white px-6 py-3 font-medium text-green transition hover:bg-beige focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2;
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-terracotta px-6 py-3 font-medium text-white transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-terracotta focus:ring-offset-2;
+}
+
+.card {
+  @apply rounded-xl2 border border-black/5 bg-white shadow-sm;
+}
+
+.input {
+  @apply w-full rounded-lg border border-black/15 bg-white px-4 py-2.5 text-[15px] text-green-dark placeholder:text-black/35 focus:border-green focus:outline-none focus:ring-1 focus:ring-green;
+}
+
+.label {
+  @apply mb-1.5 block text-sm font-medium text-green-dark;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+}
